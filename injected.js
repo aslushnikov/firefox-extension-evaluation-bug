@@ -33,3 +33,5 @@ window.__SAMPLE_EXTENSION_NAMESPACE__ = {
         return childList;
     }
 };
+
+JSON.stringify = () => "Oh no! Someone broke my JSON.stringify!!"
