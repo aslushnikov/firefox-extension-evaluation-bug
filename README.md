@@ -17,14 +17,14 @@ To reproduce:
 - navigate to `https://example.com`
 - open Firefox DevTools and check the console output.
 
-As of firefox 109, the output is:
+**ACTUAL**:: As of firefox 109, the output is:
 
 ```
 self.eval('JSON.stringify(1)') =  Oh no! Someone broke my JSON.stringify!! content.js:6:11
      eval('JSON.stringify(1)') =  1 content.js:7:11
 ```
 
-Expected output (e.g. the one in Chrome) is:
+**EXPECTED**: Expected output (e.g. the one in Chrome) is:
 ```
 self.eval('JSON.stringify(1)') =  1 content.js:6:11
      eval('JSON.stringify(1)') =  1 content.js:7:11
